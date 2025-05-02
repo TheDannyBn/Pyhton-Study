@@ -9,3 +9,32 @@
 #Join a list of words into one string using join().
 #Use string formatting to insert a variable into a sentence.
 #Remove leading and trailing spaces from a string.
+
+
+text = '  Hello World!  '
+
+print(len(text))
+print(text.upper())
+print(text.lower())
+new_text = text.replace("World", "Python")
+print(new_text)
+
+print(text.startswith("H"))
+print(text.strip().startswith("H"))
+
+print(text.endswith("!"))
+print(text.strip().endswith("!"))
+
+words = text.split()
+print(words)
+
+word_list = ["Python", "is", "awesome"]
+joined_text = ' '.join(word_list)
+print(joined_text)
+
+name = "Danny"
+formatted_text = f"My name is {name}."
+print(formatted_text)
+
+stripped_text = text.strip()
+print(stripped_text)
